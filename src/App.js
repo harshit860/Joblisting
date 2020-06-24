@@ -6,10 +6,10 @@ import Main from './Components/Main'
 
 function App() {
   return (
-    <div >
+    <React.Fragment >
        <Header />
        <Main />
-    </div>
+    </React.Fragment>
   );
 }
 

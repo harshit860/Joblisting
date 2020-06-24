@@ -52,6 +52,7 @@ export default class Main extends Component {
         let jobs = data['jobs'].filter(element => {
             let jobsInDatabase = element.title.toLowerCase() 
             let jobsInDatabase1 = element.company.toLowerCase()
+            let jobsInDatabase2 = element.location.toLowerCase()
             if(jobsInDatabase.indexOf(usersearch) !== -1)
             {
             return jobsInDatabase.indexOf(usersearch) !== -1
@@ -59,6 +60,10 @@ export default class Main extends Component {
             if(jobsInDatabase1.indexOf(usersearch) !== -1)
             {
                 return jobsInDatabase1.indexOf(usersearch) !== -1
+            }
+            if(jobsInDatabase2.indexOf(usersearch) !== -1)
+            {
+                return jobsInDatabase2.indexOf(usersearch) !== -1
             }
         })
         this.setState({
@@ -120,11 +125,11 @@ export default class Main extends Component {
     render() {
         let jobsList = this.state.jobs.map(element => {
             let skills = element.skills.join(' , ')
-            return <div className="border p-4 mt-4 col-xl-10 col-lg-10 ">
+            return <div className="border rounded shadow-sm p-4 mt-4 col-xl-10 col-lg-10 ">
                 <p>{element.title}</p>
                 <p className="row m-0">{element.company} | {element.location} | {element.experience} yrs exp</p>
                 <div>Skills : {skills}</div>
-                <div className="justify-content-end d-flex"><button>Apply</button></div>
+                <div className="justify-content-end d-flex"><button className="btn btn-primary">Apply</button></div>
             </div>
         })
 
