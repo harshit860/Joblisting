@@ -1,0 +1,34 @@
+{
+    "jobs":[
+        {
+            "title":"FrontEnd Developer",
+            "company":"Lets Venture",
+            "location":"Bangalore",
+            "experience":"0-2",
+            "skills":["Angular","Java","Ruby"],
+            "logo":"",
+            "link":"",
+            "type":"full"
+        },
+        {
+            "title":"Java Developer",
+            "company":"Google",
+            "location":"New Delhi",
+            "experience":"2-4",
+            "skills":["Java"],
+            "logo":"",
+            "link":"",
+            "type":"part"
+        },
+        {
+            "title":"Python Developer",
+            "company":"Accenture",
+            "location":"Mumbai",
+            "experience":"5",
+            "skills":["Python","Flask"],
+            "logo":"",
+            "link":"",
+            "type":"part"
+        }
+    ]
+}
