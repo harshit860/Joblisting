@@ -158,7 +158,7 @@ export default class Main extends Component {
                     </div>
                 </div>
                 <div className="container">
-                    <button className="btn" onClick={this.advanceSwitch}>Advance Search </button>
+                    <button className="btn" onClick={this.advanceSwitch} title={'click to expand'}>Advance Search </button>
                     {this.state.showAdvance ? (
                         <div className = "row justify-content-between d-flex">
                             <div  className ="p-2 ">
